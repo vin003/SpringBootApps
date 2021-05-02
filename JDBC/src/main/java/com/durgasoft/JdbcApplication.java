@@ -4,12 +4,13 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class HelloappsApplication {
+public class JdbcApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(HelloappsApplication.class, args);
-		System.out.println("Spring Boot Application using STS");
-		System.out.println("Hello User 3rd from the RoCk");
+		SpringApplication.run(JdbcApplication.class, args);
+		
+		System.out.println("Today will move the sun...");
 	}
+	
 
 }
