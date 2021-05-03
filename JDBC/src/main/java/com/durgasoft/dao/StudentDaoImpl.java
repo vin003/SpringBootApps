@@ -73,14 +73,33 @@ public class StudentDaoImpl implements StudentDao {
 
 	@Override
 	public String update(Student student) {
+		String status="";
 		
-		return null;
+		int rowCount  = jdbcTemplate.update("update student SNAME ='"+student.getSname()+"', SADDR='"+student.getSaddr()+"' where SID='"+student.getSid()+"'") ;
+		if ( rowCount ==1)
+		{
+			status="success";
+		}
+		else
+		{
+			status="failure";
+		}
+		return status;
 	}
 
 	@Override
 	public String delee(String sid) {
-		
-		return null;
+		String status  ="";
+		int rowCount =jdbcTemplate.update("delete from student where SID='"+sid+"'");
+		if ( rowCount == 1)
+		{
+			status ="success";
+		}
+		else
+		{
+			status="failure";
+		}
+		return status;
 	}
 
 }

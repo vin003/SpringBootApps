@@ -9,6 +9,6 @@
 <body>
 <jsp:include page="/WEB-INF/welcome.jsp"></jsp:include>
 <br><br><br><br>
-<h2 style="color:red;" align="center">${studentoperation} success</h2>
+<h2 style="color:red;" align="center">${studentoperation}  Student</h2>
 </body>
 </html>

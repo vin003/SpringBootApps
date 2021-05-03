@@ -31,13 +31,14 @@ public class StudentServiceImpl implements StudentService {
 	@Override
 	public String updateStudent(Student student) {
 	
-		return null;
+		String status = studentDao.update(student) ;
+		return status;
 	}
 
 	@Override
 	public String deleteStudent(String sid) {
-	
-		return null;
+	String status = studentDao.delee(sid); 
+		return status;
 	}
 
 }
